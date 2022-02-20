@@ -25,25 +25,27 @@ _get_repolink () {
 
 _setting_bot () {
     local zippath
-    zippath="moussaBot.zip"
-    echo "  يتم تحميل ملفات سورس جمثون ..."
+    zippath="ProUserBot.zip"
+    echo "  يتم تحميل ملفات سورس برو ..."
     wget -q $(_get_repolink) -O "$zippath"
-    echo "  فك بيانات السورس ..."
-    JMTHONPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
+    echo "  جمع بيانات السورس ..."
+    PROPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
     unzip -qq "$zippath"
     echo "✓"
-    echo "  يتم التفريغ.."
+    echo "  يتم الإنشاء.."
     rm -rf "$zippath"
     sleep 5
-    cd $JMTHONPATH
-    echo "    بدء بوت جمثون    "
+    cd $PROPATH
+    echo "    بدء تشغيل البوت برو    "
     echo "
                        
-╋╋╋╋╋┏┓┏┓
-╋┏┳━━┫┗┫┗┳━┳━┳┓
-╋┣┫┃┃┃┏┫┃┃╋┃┃┃┃
-┏┛┣┻┻┻━┻┻┻━┻┻━┛
-┗━┛
+.____.   .____.      _____
+|    |   |    |     /     \
+|____|   |____|    |       |
+|        | \       |       |
+|        |  \      |       |
+|        |   \      \_____/
+    
     "
 
     python3 ../setup/updater.py ../requirements.txt requirements.txt
