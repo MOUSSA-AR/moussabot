@@ -1,13 +1,13 @@
 {
   "name": "MOUSSA-PRO",
   "description": "A simple Telegram userbot based on Telethon . Maintained by Sandeep ",
-  "logo": "https://telegra.ph/file/3d60313110c58684b31ea.jpg",
+  "logo": "https://telegra.ph/file/30a31c94e3b80c147bc15.jpg",
   "keywords": [
     "plugin",
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/MOUSSA-AR/moussa-bot/",
+  "repository": "https://github.com/MOUSSA-AR/moussapro-bot/",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
